@@ -3,37 +3,33 @@ import {makeStyles} from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
     body: {
-        height: "100%",
-        backgroundColor: "black",
-        fontFamily: "Montserrat-Regular, sans-serif"
-    },
-    
-    h1,h2,h3,h4,h5,h6: {
-      margin: "40px"
     },
     
     block: {
+      height: "100%",
+      fontFamily: "Montserrat-Regular, sans-serif",
       minHeight: "100%",
       paddingTop: "56px"
     },
     
     home: {
-      background: "black",
       backgroundSize: "cover"
     },
 
-    banner, h2: {
+    text_title: {
       fontFamily: "Montserrat-Bold, sans-serif",
       fontSize: "2.5rem",
       fontWeight: "800",
-      background: "#E2251D"
+      color: "#E2251D",
+      margin: "40px"
     },
 
-    banner, h4: {
+    text_subtitle: {
       fontFamily: "Montserrat-SemiBold, sans-serif",
       fontSize: "1.9rem",
       lineHeight: "1.8rem",
-      color: "white",
+      color: "black",
+      margin: "40px"
     },
     
     a: { 
@@ -55,17 +51,19 @@ const useStyles = makeStyles({
     },
 })
 
-const classes = useStyles();
+const Maintenance = ()  => {
+    const classes = useStyles();
 
-function Maintenance() {
     return (
-        <div className={classes.home, classes.block}>
-            <div className={`row container ${classes.banner}`}>
-                <h2>We’ll be back soon!</h2>
-                <h4>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a className={} href="mailto:info@apploadafrica.com">contact us</a>, otherwise we&rsquo;ll be back online shortly!</h4>
-                <h4>&mdash; Appload</h4>
+        <main className={classes.home}>
+            <div className={classes.block}>
+                <div className="row container">
+                    <h2 className={classes.text_title}>We’ll be back soon!</h2>
+                    <h4 className={classes.text_subtitle}>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:info@apploadafrica.com">contact us</a>, otherwise we&rsquo;ll be back online shortly!</h4>
+                    <h4 className={classes.text_subtitle}>&mdash; Appload</h4>
+                </div>
             </div>
-        </div>
+        </main>
     )
 }
 
