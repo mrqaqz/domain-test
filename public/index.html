@@ -23,11 +23,91 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Appload Trading Room</title>
+
+    <!-- Font Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Personal CSS -->	
+    <style>
+      body {
+        height: 100%;
+        background-color: black;
+        font-family: Montserrat-Regular, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      h1,h2,h3,h4,h5,h6 {
+        margin: 40px;
+      }
+      
+      .block {
+        min-height: 100%;
+        padding-top: 56px
+      }
+      
+      .home {
+        background-image: url('../img/jpg/bg-01.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      .banner h2 {
+        font-family: Montserrat-Bold, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        background: -webkit-linear-gradient(#EE7623, #E2251D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .banner h4 {
+        font-family: Montserrat-SemiBold, sans-serif;
+        font-size: 1.9rem;
+        line-height: 1.8rem;
+        color: white;
+      }
+      
+      a { 
+        font-family: Montserrat-SemiBold, sans-serif;
+        font-size: 1.9rem;
+        line-height: 1.8;
+        color: #666666;
+        margin: 0px;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        background-color: transparent;
+      }
+  
+      a:hover { 
+        background-color: transparent;
+        color: #ff3b30;
+        transition: 0.5s;
+      }
+  
+      a:focus {
+        outline: none !important;
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <main class="home block">
+      <div class="row container banner">
+        <h2>We’ll be back soon!</h2>
+        <h4>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:info@apploadafrica.com">contact us</a>, otherwise we&rsquo;ll be back online shortly!</h4>
+        <h4>&mdash; Appload</h4>
+      </div>
+    </main>
+  
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <!-- <div id="root"></div> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
